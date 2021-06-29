@@ -1,4 +1,4 @@
-const accordions = document.querySelectorAll('.label')
+const accordion = document.querySelectorAll('.label')
 const menuArray = document.querySelectorAll('.content')
 const viewArray = document.querySelectorAll('.items')
 
