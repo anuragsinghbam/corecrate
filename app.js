@@ -2,9 +2,11 @@ const accordions = document.querySelectorAll('.label')
 const menuArray = document.querySelectorAll('.content')
 const viewArray = document.querySelectorAll('.items')
 
-accordions.forEach((accordion) => accordion.addEventListener('click', function () {
-    this.parentElement.classList.toggle('active')
-}))
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    this.parentElement.classList.toggle("active");
+  });
+}
 
 function addRemove(item, itemView) {
   Array.from(item).forEach((button) => {
