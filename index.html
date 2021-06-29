@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoreCrate</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <p class="logo">Core<span>Crate</span></p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Create New Project</a></li>
+          <li><a href="#">In Progress Projects</a></li>
+          <li><a href="#">Completed Projects</a></li>
+          <li><a href="#">Retrieve Data</a></li>
+          <li><a href="#">Request</a></li>
+        </ul>
+        <div>
+          <select name="users">
+            <option value="Emilia-Clarke">Emilia Clarke</option>
+          </select>
+          <i class="fas fa-user user"></i>
+          <div class="notification">
+            <i class="fas fa-bell"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="new-project">
+        <p>Create a New Project</p>
+      </div>
+      <hr />
+      <div class="project-info">
+        <div class="project-number">
+          <p>Project Number</p>
+          <input type="text" placeholder="Enter project number" />
+        </div>
+        <div class="counts">
+          <p>Counts:</p>
+          <input type="text" placeholder="Enter Counts" />
+        </div>
+        <div class="deadline">
+          <p>Deadline</p>
+          <input type="date" />
+        </div>
+        <div class="priority">
+          <p>Priority</p>
+          <select name="priority">
+            <option value="">Select</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+
+      <div class="menus">
+        <div class="add-menu">
+          <div class="handburger">
+            <div class="handburger__line"></div>
+            <div class="handburger__line"></div>
+            <div class="handburger__line"></div>
+          </div>
+          <div class="search">
+            <div class="icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <input type="search" placeholder="Search here" />
+            <button style="border: none; cursor: pointer" class="icon">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="accordion">
+            <div class="contentBox">
+              <div class="label">
+                <div class="icon"><i class="far fa-industry"></i></div>
+                <p>Industry</p>
+              </div>
+              <div id="industry" class="content">
+                <button>Aerospace Industry</button>
+                <br />
+                <button>Transport Industry</button>
+                <br />
+                <button>Computer Industry</button>
+                <br />
+                <button>Telecommuncation</button>
+                <br />
+                <button>Industry</button>
+                <br />
+                <button>Hospitality Industrys</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="contentBox">
+              <div class="label">
+                <div class="icon"><i class="fal fa-briefcase"></i></div>
+                <p>Job Function</p>
+              </div>
+              <div id="job-function" class="content">
+                <button>Aerospace Industry</button>
+                <br />
+                <button>Transport Industry</button>
+                <br />
+                <button>Computer Industry</button>
+                <br />
+                <button>Telecommuncation</button>
+                <br />
+                <button>Industry</button>
+                <br />
+                <button>Hospitality Industrys</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="contentBox">
+              <div class="label">
+                <div class="icon"><i class="far fa-sack-dollar"></i></div>
+                <p>Revenue Size</p>
+              </div>
+              <div id="revenue-size" class="content">
+                <button>Aerospace Industry</button>
+                <br />
+                <button>Transport Industry</button>
+                <br />
+                <button>Computer Industry</button>
+                <br />
+                <button>Telecommuncation</button>
+                <br />
+                <button>Industry</button>
+                <br />
+                <button>Hospitality Industrys</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="contentBox">
+              <div class="label">
+                <div class="icon"><i class="far fa-user"></i></div>
+                <p>Employee Size</p>
+              </div>
+              <div id="employee-size" class="content">
+                <button>Aerospace Industry</button>
+                <br />
+                <button>Transport Industry</button>
+                <br />
+                <button>Computer Industry</button>
+                <br />
+                <button>Telecommuncation</button>
+                <br />
+                <button>Industry</button>
+                <br />
+                <button>Hospitality Industrys</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="contentBox">
+              <div class="label">
+                <div class="icon">
+                  <i class="fal fa-map-marker-alt"></i>
+                </div>
+                <p>Location</p>
+              </div>
+              <div id="location" class="content">
+                <button>Aerospace Industry</button>
+                <br />
+                <button>Transport Industry</button>
+                <br />
+                <button>Computer Industry</button>
+                <br />
+                <button>Telecommuncation</button>
+                <br />
+                <button>Industry</button>
+                <br />
+                <button>Hospitality Industrys</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="contentBox">
+              <div class="label">
+                <div class="icon">
+                  <i class="fal fa-address-book"></i>
+                </div>
+                <p>Contact Fields</p>
+              </div>
+              <div id="contact-fields" class="content">
+                <button>Aerospace Industry</button>
+                <br />
+                <button>Transport Industry</button>
+                <br />
+                <button>Computer Industry</button>
+                <br />
+                <button>Telecommuncation</button>
+                <br />
+                <button>Industry</button>
+                <br />
+                <button>Hospitality Industrys</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="contentBox">
+              <div class="label">
+                <div class="icon">
+                  <i class="far fa-building"></i>
+                </div>
+                <p>Company Fields</p>
+              </div>
+              <div id="company-fields" class="content">
+                <button>Aerospace Industry</button>
+                <br />
+                <button>Transport Industry</button>
+                <br />
+                <button>Computer Industry</button>
+                <br />
+                <button>Telecommuncation</button>
+                <br />
+                <button>Industry</button>
+                <br />
+                <button>Hospitality Industrys</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="contentBox">
+              <div class="label">
+                <div class="icon">
+                  <i class="fal fa-ruler-triangle"></i>
+                </div>
+                <p>Project Tier</p>
+              </div>
+              <div id="project-tier" class="content">
+                <button>Aerospace Industry</button>
+                <br />
+                <button>Transport Industry</button>
+                <br />
+                <button>Computer Industry</button>
+                <br />
+                <button>Telecommuncation</button>
+                <br />
+                <button>Industry</button>
+                <br />
+                <button>Hospitality Industrys</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-menu">
+          <div>
+            <p class="criteria">Criteria:</p>
+            <p class="fulfillment">Fulfillment</p>
+            <p class="refulfillment">Refulfillment</p>
+          </div>
+          <div class="left-side">
+            <div class="left-side__heading">
+              <h3>Industry</h3>
+            </div>
+            <div class="items" id="industry-items"></div>
+          </div>
+          <div class="left-side">
+            <div class="left-side__heading">
+              <h3>Job Function</h3>
+            </div>
+            <div class="items" id="job-function-items"></div>
+          </div>
+          <div class="left-side">
+            <div class="left-side__heading">
+              <h3>Revenue Size</h3>
+            </div>
+            <div class="items" id="revenue-size-items"></div>
+          </div>
+          <div class="left-side">
+            <div class="left-side__heading">
+              <h3>Employee Size</h3>
+            </div>
+            <div class="items" id="employee-size-items"></div>
+          </div>
+          <div class="left-side">
+            <div class="left-side__heading">
+              <h3>Location</h3>
+            </div>
+            <div class="items" id="location-items"></div>
+          </div>
+          <div class="left-side">
+            <div class="left-side__heading">
+              <h3>Contact Fields</h3>
+            </div>
+            <div class="items" id="contact-fields-items"></div>
+          </div>
+          <div class="left-side">
+            <div class="left-side__heading">
+              <h3>Company Fields</h3>
+            </div>
+            <div class="items" id="company-fields-items"></div>
+          </div>
+          <div class="left-side">
+            <div class="left-side__heading">
+              <h3>Project Tier</h3>
+            </div>
+            <div class="items" id="project-tier-items"></div>
+          </div>
+        </div>
+        <div class="comment-menu">
+          <p>Comments:</p>
+          <input type="text" placeholder="Enter commments" />
+        </div>
+      </div>
+      <div class="save-project">
+        <button class="save">Save and create a new project</button>
+        <button class="save">Save and exit</button>
+        <button class="cancel">Cancel</button>
+      </div>
+    </header>
+    <script src="app.js"></script>
+  </body>
+</html>

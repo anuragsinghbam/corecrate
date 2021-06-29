@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+hr {
+  opacity: 0.7;
+}
+
+header {
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+}
+
+nav {
+  padding: 0 2em;
+  min-height: 8vh;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+nav .logo span {
+  color: dodgerblue;
+}
+
+nav ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease-in;
+}
+
+nav a:hover {
+  color: dodgerblue;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
+nav select {
+  border: none;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  width: 120px;
+  margin-right: 0.5em;
+}
+
+nav .user {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  margin-right: 2em;
+  cursor: pointer;
+}
+
+nav .notification {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  border-radius: 0.4em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  cursor: pointer;
+}
+
+.new-project,
+.project-info {
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-project p {
+  font-size: 1.2rem;
+}
+
+.project-info > div {
+  display: flex;
+  align-items: center;
+}
+
+.project-info > div > p {
+  margin-right: 1em;
+}
+
+.project-info > div > input {
+  border: none;
+  padding: 0.5em 1em;
+  width: 20em;
+  height: 2.5em;
+}
+
+.project-info > div > select {
+  border: none;
+  height: 2.5em;
+  width: 10em;
+  cursor: pointer;
+}
+
+.menus {
+  display: flex;
+  min-height: 55vh;
+}
+
+.menus > div + div {
+  border-left: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.add-menu {
+  width: 25%;
+  padding: 0.8em 1em;
+}
+
+.search {
+  display: flex;
+}
+
+.search .icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: hsl(0, 0%, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.search input[type="search"] {
+  padding-left: 0.5em;
+  width: 85%;
+  height: 2rem;
+  border: none;
+}
+
+.handburger {
+  width: 1.5em;
+  height: 1.2em;
+  margin-bottom: 1em;
+}
+
+.handburger__line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+.view-menu {
+  width: 55%;
+}
+
+.view-menu > div {
+  padding: 1em 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.view-menu .left-side {
+  padding: 0 2em;
+  min-height: 5em;
+  width: 100%;
+}
+
+.view-menu .left-side__heading {
+  width: 20%;
+}
+
+.view-menu .criteria {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.view-menu .fulfillment,
+.refulfillment {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.comment-menu {
+  width: 20%;
+  padding: 1em 0.5em;
+}
+
+.comment-menu p {
+  margin-bottom: 0.5em;
+}
+
+.comment-menu input {
+  height: 2.5em;
+  padding: 1em;
+  background-color: white;
+  width: 100%;
+}
+
+.save-project {
+  padding-left: 50%;
+  background-color: white;
+  min-height: 17vh;
+  display: flex;
+  align-items: center;
+}
+
+.save-project button {
+  font-size: 1rem;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  height: 2em;
+  border-radius: 2px;
+  padding: 0 1em;
+  margin-right: 1em;
+}
+
+.save-project .cancel {
+  background-color: hsl(0, 0%, 90%);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* accordion */
+
+.accordion .contentBox {
+  position: relative;
+}
+
+.accordion .contentBox .label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: hsl(0, 0%, 90%);
+  cursor: pointer;
+}
+
+.accordion .icon {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  margin-right: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion .contentBox .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.accordion .contentBox.active .label::before {
+  content: "-";
+}
+
+.accordion .contentBox .content {
+  position: relative;
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  margin-bottom: 0.2em;
+}
+
+.accordion .contentBox.active .content {
+  height: 160px;
+}
+
+.accordion .contentBox .content button {
+  width: 100%;
+  height: 2em;
+  border: none;
+  cursor: pointer;
+}
+
+/* items */
+
+.items {
+  width: 80%;
+}
+
+.item {
+  position: relative;
+  display: inline-block;
+  margin: 0.2em;
+  padding: 0.2em 0.4em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2em;
+}
+
+.item span {
+  cursor: pointer;
+}
